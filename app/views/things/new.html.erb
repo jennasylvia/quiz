@@ -1,0 +1,12 @@
+<br />
+<div class="booyah-box col-10 offset-1">
+  <h1>Write Name</h1>
+  <%= simple_form_for @thing, url: new_thing_path do |f| %>
+    <%= f.input :firstname %>
+    <%= f.input :lastname %>
+    <br />
+    <%= f.submit "submit", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+  <br />
+</div>
